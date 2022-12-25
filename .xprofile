@@ -1,0 +1,4 @@
+export GTK_THEME="Adwaita:dark"
+# Make rofi launch applications with theme
+export QT_QPA_PLATFORMTHEME="qt5ct"
+# export MANPATH="/usr/local/man:$MANPATH"
