@@ -1,0 +1,70 @@
+# # # # # # # #
+# = Colors =  #
+# # # # # # # #
+
+# Summary
+# - client.focused
+# - - color0 - color4
+#
+# - client.unfocused
+# - - color5 - color9
+#
+# - client.focused_inactive
+# - - color10 - color14
+#
+# - client.urgent
+# - - color15 - color19
+#
+# - client.placeholder
+# - - color20 - color24
+#
+
+
+
+# background
+set $background #ffffff
+
+# client.focused (color0 - color4)
+set_from_resource $bgFocused color0 		#285577
+set_from_resource $borderFocused color1 	#4c7899
+set_from_resource $textFocused color2 		#ffffff
+set_from_resource $indicatorFocused color3 	#2e9ef4
+set_from_resource $childBorderFocused color4 	#285577
+
+# client.unfocused (color5 - color9)
+set_from_resource $bgUnfocused color5 		#222222
+set_from_resource $borderUnfocused color6 	#333333
+set_from_resource $textUnfocused color7 	#888888
+set_from_resource $indicatorUnfocused color8 	#292d2e
+set_from_resource $childBorderUnfocused color9 	#222222
+
+# client.focused_inactive (color10 - color14)
+set_from_resource $bgInactive color10		#5f676a
+set_from_resource $borderInactive color11 	#333333
+set_from_resource $textInactive color12 	#ffffff
+set_from_resource $indicatorInactive color13 	#484e50
+set_from_resource $childBorderInactive color14 	#5f676a
+
+# client.urgent (color15 - color19)
+set_from_resource $bgUrgent color15 		#900000
+set_from_resource $borderUrgent color16 	#2f343a
+set_from_resource $textUrgent   color17 	#ffffff
+set_from_resource $indicatorUrgent color18 	#900000
+set_from_resource $childBorderUrgent  color19   #900000
+
+# client.placeholder (color20 - color24)
+set_from_resource $bgPlaceholder color20 	#0c0c0c
+set_from_resource $borderPlaceholder color21 	#000000
+set_from_resource $textPlaceholder color22 	#ffffff
+set_from_resource $indicatorPlaceholder color23 #000000
+set_from_resource $childbPlaceholder color24 	#0c0c0c
+
+
+# class                 border			backgr.			text			indicator			child_border
+client.focused          $borderFocused		$bgFocused		$textFocused		$indicatorFocused		$childBorderFocused
+client.focused_inactive $borderInactive		$bgInactive		$textInactive		$indicatorInactive		$childBorderInactive
+client.unfocused        $borderUnfocused	$bgUnfocused		$textUnfocused		$indicatorUnfocused		$childBorderUnfocused
+client.urgent           $borderUrgent		$bgUrgent		$textUrgent		$indicatorUrgent		$childBorderUrgent
+client.placeholder      $borderPlaceholder	$bgPlaceholder		$textPlaceholder	$indicatorPlaceholder		$childbPlaceholder
+
+client.background       $background

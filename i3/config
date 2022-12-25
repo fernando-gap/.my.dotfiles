@@ -1,0 +1,7 @@
+include ~/.config/i3/conf/autostart
+include ~/.config/i3/conf/bindings
+include ~/.config/i3/conf/workspaces
+include ~/.config/i3/conf/colors
+
+font pango:monospace 8
+
