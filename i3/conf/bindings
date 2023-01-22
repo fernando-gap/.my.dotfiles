@@ -36,6 +36,8 @@ bindsym $mod+o layout stacking
 bindsym $mod+parenleft layout tabbed
 bindsym $mod+parenright layout toggle split
 
+bindsym $mod+Ctrl+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This    will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
 # # # # # # # # # # # # # #
 # = Workspaces Bindings = #
 # # # # # # # # # # # # # #
@@ -87,6 +89,16 @@ bindsym $mod+bracketright workspace number $ws6
 bindsym $mod+bracketleft workspace number $ws7
 bindsym $mod+exclam workspace number $ws8
 bindsym $mod+equal workspace number $ws9
+
+# Screenshots
+#bindsym Shift+z exec --no-startup-id maim "/home/$USER/dwn/img/wpp/$(date)"
+#bindsym $mod+Shift+z exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+#bindsym Shift+m exec --no-startup-id maim --select "/home/$USER/img/$(date)"
+
+### Clipboard Screenshots
+#bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+#bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+#bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 
 
