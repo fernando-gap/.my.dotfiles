@@ -2,3 +2,11 @@ export GTK_THEME="Adwaita:dark"
 # Make rofi launch applications with theme
 export QT_QPA_PLATFORMTHEME="qt5ct"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# Japanese Input using anthy as input method and otf-ipafont
+export GTK_IM_MODULE='uim'
+export QT_IM_MODULE='uim'
+uim-xim &
+# icon that can be annoying
+uim-toolbar-gtk3 &
+export XMODIFIERS='@im=uim'

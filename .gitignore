@@ -1,3 +1,6 @@
 
 # polybar-themes too much files
 polybar/
+
+# Any other config file that shouldn't be pushed to git
+others/

@@ -28,7 +28,7 @@ set $borderWidth 2
 
 
 # borders size
-default_border pixel $borderWidth
+default_border none
 default_floating_border pixel $borderWidth
 
 hide_edge_borders smart
@@ -71,3 +71,18 @@ gaps inner 5
 
 # sm
 smart_gaps on
+
+
+# # # # # # # # #
+#  = Clients =  #
+# # # # # # # # #
+
+
+# note taking
+assign [class="obsidian"] 1
+
+# browser
+assign [class="firefox" instance="Navigator"] 2
+
+# vscode
+assign [class="Code" instance="code"] 3

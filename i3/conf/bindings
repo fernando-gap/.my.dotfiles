@@ -93,9 +93,9 @@ bindsym $mod+equal workspace number $ws9
 # Screenshots
 bindsym $mod+n mode "screenshot"
 mode "screenshot" {
-        bindsym p exec --no-startup-id maim "/home/$USER/dwn/img/wpp/$(date)"
-        bindsym $mod+p exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/dwn/img/wpp/$(date)"
-        bindsym $mod+Shift+p exec --no-startup-id maim --select "/home/$USER/dwn/img/wpp/$(date)"; exec --no-startup-id notify-send "Screenshot taken" -t 5000
+        bindsym p exec --no-startup-id maim "/home/$USER/dwn/img/wpp/$(date).png"
+        bindsym $mod+p exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/dwn/img/wpp/$(date).png"
+        bindsym $mod+Shift+p exec --no-startup-id maim --select "/home/$USER/dwn/img/wpp/$(date).png"; exec --no-startup-id notify-send "Screenshot taken" -t 5000
 
         ## Clipboard Screenshots
         #bindsym $mod+p
@@ -157,8 +157,8 @@ bindsym $mod+u fullscreen toggle
 # start a terminal
 bindsym $mod+Return exec kitty
 
-# start dmenu (a program launcher)
-bindsym $mod+e exec /home/god/.config/polybar/hack/scripts/launcher.sh
+# start rofi (a program launcher)
+bindsym $mod+e exec /home/god/.config/polybar/shapes/scripts/launcher.sh
 
 # reload the configuration file
 bindsym $mod+Shift+r reload

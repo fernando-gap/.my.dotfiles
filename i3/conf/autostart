@@ -1,4 +1,12 @@
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec_always --no-startup-id $HOME/etc/polybar/my/launch.sh
-exec i3-msg workspace 1
+exec_always --no-startup-id $HOME/etc/polybar/shapes/launch.sh
+
+exec --no-startup-id systemctl --user start freefilesync
+
+exec --no-startup-id code
+exec --no-startup-id firefox
+exec --no-startup-id obsidian
+
+# init workspace aside browser
+exec --no-startup-id i3-msg workspace 2
