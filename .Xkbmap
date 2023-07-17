@@ -1,1 +1,1 @@
--layout us -variant dvp -option compose:ralt -option caps:swapescape
+-layout us -variant dvp -option compose:ralt -option caps:swapescape -option altwin:swap_alt_win

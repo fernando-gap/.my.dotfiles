@@ -7,6 +7,8 @@ exec --no-startup-id systemctl --user start freefilesync
 exec --no-startup-id code
 exec --no-startup-id firefox
 exec --no-startup-id obsidian
+exec --no-startup-id fluent
+exec --no-startup-id anki
 
 # init workspace aside browser
 exec --no-startup-id i3-msg workspace 2
