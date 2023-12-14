@@ -32,9 +32,12 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Right move right
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+o layout stacking
-bindsym $mod+parenleft layout tabbed
-bindsym $mod+parenright layout toggle split
+
+bindsym $mod+apostrophe layout stacking
+bindsym $mod+q layout tabbed
+
+# toggle between vertical and horizontal split
+bindsym $mod+Shift+apostrophe layout toggle split
 
 bindsym $mod+Ctrl+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This    will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -71,8 +74,8 @@ bindsym $mod+Shift+7 move container to workspace number $ws6; workspace $ws6; ex
 bindsym $mod+Shift+5 move container to workspace number $ws7; workspace $ws7; exec --no-startup-id notify-send "Moved to $ws7" -t 1000
 bindsym $mod+Shift+3 move container to workspace number $ws8; workspace $ws8; exec --no-startup-id notify-send "Moved to $ws8" -t 1000
 
-#bindsym $mod+Shift+9 move container to workspace number $ws9; workspace $ws9; exec --no-startup-id notify-send "Moved to $ws9" -t 1000
-#bindsym $mod+Shift+0 move container to workspace number $ws10; workspace $ws10; exec --no-startup-id notify-send "Moved to $ws10" -t 1000
+bindsym $mod+Shift+a move container to workspace number $ws9; workspace $ws9; exec --no-startup-id notify-send "Moved to $ws9" -t 1000
+bindsym $mod+Shift+o move container to workspace number $ws10; workspace $ws10; exec --no-startup-id notify-send "Moved to $ws10" -t 1000
 
 # 7 5 3 1 9 0 2 4 6 8
 # [ { } ( = * ) + ] !
@@ -90,12 +93,12 @@ bindsym $mod+p workspace number $ws4
 
 # & [ { } (
 bindsym $mod+ampersand workspace number $ws5
-bindsym $mod+braceleft workspace number $ws6
-bindsym $mod+bracketright workspace number $ws7
-bindsym $mod+bracketleft workspace number $ws8
+bindsym $mod+bracketleft workspace number $ws6
+bindsym $mod+braceleft workspace number $ws7
+bindsym $mod+braceright workspace number $ws8
 
-#bindsym $mod+exclam workspace number $ws8
-#bindsym $mod+equal workspace number $ws9
+bindsym $mod+a workspace number $ws9
+bindsym $mod+o workspace number $ws10
 
 # Screenshots
 bindsym $mod+n mode "screenshot"
@@ -185,7 +188,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+z focus parent
 
 
 

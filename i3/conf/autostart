@@ -3,12 +3,15 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id $HOME/etc/polybar/shapes/launch.sh
 
 exec --no-startup-id systemctl --user start freefilesync
+exec --no-startup-id $HOME/etc/activity-watch/start.sh
 
 exec --no-startup-id code
 exec --no-startup-id firefox
 exec --no-startup-id obsidian
 exec --no-startup-id fluent
 exec --no-startup-id anki
+#exec --no-startup-id discord
+exec_always --no-startup-id "pm2 reload client"
 
 # init workspace aside browser
 exec --no-startup-id i3-msg workspace 2

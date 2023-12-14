@@ -92,3 +92,6 @@ assign [class="Code" instance="code"] 4
 
 # fluent
 assign [class="fluent"] 5
+
+# discord
+assign [class="discord"] 6
